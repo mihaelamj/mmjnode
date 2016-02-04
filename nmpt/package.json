@@ -1,0 +1,17 @@
+{
+  "name": "npmt",
+  "version": "1.0.0",
+  "description": "NodeJS nmp test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mmj",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.11.1"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
