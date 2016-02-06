@@ -1,0 +1,17 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "Mongo Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongo"
+  ],
+  "author": "mmj",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.4.1"
+  }
+}

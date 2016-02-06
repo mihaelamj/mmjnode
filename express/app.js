@@ -1,4 +1,4 @@
-//1. nmp install -> for nmp to create basic package.json
+//1. nmp init -> for nmp to create basic package.json
 //2. nmp install express --save -> for nmp to install express and save the dependancy in package.json
 //3. npm install ejs --save -> for npm to install ejs template fw and save the dependancy in package.json
 //4. mkdir views -> make dir for express where you will put your views

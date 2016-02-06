@@ -1,0 +1,26 @@
+<!--name the app-->
+<html ng-app="TestApp">
+	<head>
+		<title>The MEAN stack</title>
+        <!--fetch angualr from Google CDN, dev version, before the browser renders-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	</head>
+    <!-- -->
+	<body ng-controller="MainController as vm">
+         
+         <ul>
+            <li ng-repeat="person in vm.people">
+                {{ person.name }}
+            </li>
+         </ul>
+         
+         <!--take data from the node server and give it to the client, via ejs templating -->
+         <script>
+            var clientPeople = <%- JSON.stringify(serverPeople) %>;
+         </script>
+        
+         <!-- tell THE BROWSER to process our angualr app.js, note Node.js-->
+         <script src="/assets/js/app.js"></script>
+         
+	</body>
+</html>

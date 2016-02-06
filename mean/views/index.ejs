@@ -1,0 +1,29 @@
+<!--name the app-->
+<html ng-app="TestApp">
+	<head>
+		<title>The MEAN stack</title>
+        <!--.fetch angualr from Google CDN, dev version, before the browser renders-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+	</head>
+    <!-- -->
+	<body ng-controller="MainController as vm">
+    
+        <!--add input and bind it to message property-->
+        <input type="text" ng-model="vm.message" />
+        <br />
+    
+        <!--{{}}} means replace-->
+        {{ vm.message }}
+         <br />
+         
+         <ul>
+            <li ng-repeat="person in vm.people">
+                {{ person.name }}
+            </li>
+         </ul>
+        
+         <!-- tell THE BROWSER to process our angualr app.js, note Node.js-->
+         <script src="/assets/js/app.js"></script>
+         
+	</body>
+</html>

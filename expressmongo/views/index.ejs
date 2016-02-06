@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylesheet" />
+        
+        <!--add jQuery to send JSON data from the browser-->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js" ></script>
+    </head>
+    
+    <body>
+        <h1>Hello World!</h1>
+        
+        <form method='POST' action='/person'>
+            First Name: 
+            <input type="text" id="first" name="first"</input>
+            <br/>
+            Last Name: 
+            <input type="text" id="last" name="last"</input>
+             <br/>
+             <input type="submit" value="Submit"</input>
+        </form>
+        
+         <!--jQuery will send JSON data from the browser on page load, no need to press submit-->
+         <!--j
+        <script>
+			$.ajax({
+				type: "POST",
+				url: "/personjson",
+				data: JSON.stringify({ first: 'Jane', last: 'Doe' }),
+				dataType: 'json',
+				contentType: 'application/json'
+			});
+		</script>
+        -->
+        
+    </body>
+<html>
